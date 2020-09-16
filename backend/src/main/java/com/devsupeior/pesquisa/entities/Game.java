@@ -16,7 +16,7 @@ import javax.persistence.Table;
 import com.devsupeior.pesquisa.entities.enus.Platform;
 
 @Entity
-@Table(name="tb_game")
+@Table(name = "tb_game")
 public class Game implements Serializable {
 
 	/**
@@ -30,7 +30,7 @@ public class Game implements Serializable {
 	private Platform platform;
 
 	@ManyToOne
-	@JoinColumn(name="genre_id")
+	@JoinColumn(name = "genre_id")
 	private Genre genre;
 
 	@OneToMany(mappedBy = "game")
